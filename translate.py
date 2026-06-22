@@ -9,10 +9,10 @@ import re
 def close(event=None):
     window.destroy()
 
-gpu_state = True
+gpu_state = False
 
-#reader = easyocr.Reader(['ko', 'en'], gpu=gpu_state)
-reader = easyocr.Reader(['ja', 'en'], gpu=gpu_state) #일본어
+reader = easyocr.Reader(['ko', 'en'], gpu=gpu_state)
+#reader = easyocr.Reader(['ja', 'en'], gpu=gpu_state) #일본어
 
 window = tk.Tk()
 window.title("HELLO 오버레이")
